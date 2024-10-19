@@ -163,7 +163,7 @@ nav a:hover {
   height: 56px;
   border-radius: 30px;
   border: 1px solid lightgray;
-  margin-top: 46px;
+  margin-top: 36px;
   position: relative;
   padding: 15px 5px 15px 15px;
 }
@@ -185,6 +185,7 @@ nav a:hover {
   outline: none;
   border: none;
   width: 100%;
+  margin-top: 12px;
 }
 
 .searchBar button {
@@ -487,4 +488,159 @@ hr{
 .links a:hover{
   opacity: 80%;
   text-decoration: underline;
+}
+
+.signIn{
+  width: 0px;
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-50%);
+  scroll-behavior: auto;
+  height: 500px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #2b2b2b;
+  padding: 30px;
+  gap :10px;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  margin-left:600px ;
+}
+
+form img {
+  height: 48px;
+  width: 48px;
+}
+
+form h2{
+    margin-top: 16px;
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+    max-width: 305px;
+    line-height: 120%;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+label{
+    font-weight: 600;
+    color: black;
+}
+
+input{
+    width: 92%;
+    height: 40px;
+    margin: 4px 0 16px;
+    border-radius: 7px;
+    border: 2px solid black;
+    padding: 3px 5px;
+    outline: none;
+    font-weight: 550;
+}
+
+form a{
+    font-weight: 400;
+    line-height: 20px;
+    color: black;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    margin-top: -12px;
+    text-decoration: underline;
+}
+#signInForm:target {
+  opacity: 100%;
+  pointer-events: all; 
+  margin-left: -600px;
+  width: 500px;
+}
+
+.hide{
+  width: 20px;
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  border:1px solid black ;
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px 20px 25px 5px;
+  box-shadow: 1px 2px 2px 2px lightgray;
+  margin-top: 7px;
+  text-decoration: none;
+}
+
+.formHead{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px  0 0;
+}
+
+.submitBtn{
+  margin: 20px 0 16px 30px;
+  background: #000;
+  border-radius: 28px;
+  padding: 5px 24px;
+  font-size: 16px;
+  width: 350px;
+  height: 40px;
+  color: white;
+}
+.line{
+  width: 90%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.line p{
+  background:transparent;
+  font-size: 13px;
+  color: #333;
+  width: 180px;
+  padding-left: 20px;
+}
+
+.line hr {
+  width: 150px;
+  margin-left: 20px;
+  color: lightgrey;
+  height: 0.5px;
+}
+
+.join{
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.join:nth-child(2){
+}
+
+.join span{
+  font-weight: 500;
+  text-decoration:underline;
+  font-size: 13px;
 }
